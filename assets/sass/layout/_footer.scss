@@ -1,0 +1,13 @@
+.l-footer {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 0.8em;
+	padding: 30px 0 30px;
+	border-top: 1px solid $accent_color;
+}
+@media screen and (max-width: 768px) {
+	.l-footer {
+		font-size: 0.5em;
+	}
+}

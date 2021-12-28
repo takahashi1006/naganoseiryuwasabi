@@ -1,0 +1,23 @@
+html{
+	scroll-padding-top: 100px;//ページ内リンクが固定ヘッダーと重なって隠れる問題を解決
+}
+body{
+	overflow-x: hidden;
+	font-family: 'Shippori Mincho', serif;
+	font-size: 1em; 
+	color: $main_black_color;
+	background-color: $base_color;
+	background-image: url(../images/deco_bottom.png);
+	background-position: left bottom;
+    background-repeat: no-repeat;
+	background-size: 30%;
+}
+a{
+	text-decoration: none;
+	color: $main_black_color;
+}
+@media screen and (max-width: 768px) {
+	body{
+		background-size: 50%;
+	}
+}

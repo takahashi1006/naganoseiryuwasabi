@@ -1,0 +1,32 @@
+.c-scrolldown {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  height: 80px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 80px;
+    background: $base_color;
+    animation: pathmove 2s ease-in-out infinite;
+    opacity: 0;
+  }
+  @keyframes pathmove {
+    0% {
+      height: 0;
+      top: 0;
+      opacity: 0;
+    }
+    30% {
+      height: 80%;
+      opacity: 1;
+    }
+    100% {
+      height: 0;
+      top: 110px;
+      opacity: 0;
+    }
+  }
+}

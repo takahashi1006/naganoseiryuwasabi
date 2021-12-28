@@ -1,0 +1,26 @@
+.p-news {
+  margin: 150px auto;
+  width: 80%;
+  h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8em;
+  }
+  a {
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: $accent_color;
+    }
+  }
+  dl {
+    padding: 30px 0;
+    border-bottom: 1px solid $accent_color;
+    dt {
+      padding: 10px 0;
+      span {
+        margin: 0 10px;
+      }
+    }
+  }
+}

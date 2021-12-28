@@ -1,0 +1,30 @@
+.c-btn {
+  color: #fff;
+  display: flex;
+  align-items: center; //高さ部分中央に
+  height: 50px;
+  padding: 0 50px 0 25px;
+  border-radius: 5px;
+  background-color: $main_color;
+  position: relative;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  &:before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/open_in_new.svg) no-repeat center;
+    background-size: contain; //縦横比を崩さない
+    position: absolute;
+    top: 50%; //上の辺が中央に移動する
+    right: 25px;
+    transform: translate(0, -45%);
+  }
+  &:hover {
+    background-color: $accent_color;
+    color: #fff !important;
+  }
+}

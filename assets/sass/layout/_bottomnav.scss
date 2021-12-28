@@ -1,0 +1,38 @@
+.menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding-left: 0 !important ;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  .menu li {
+    border-right: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    list-style: none;
+    text-align: center;
+  }
+  .menu a {
+    text-decoration: none;
+    color: $main_black_color;
+  }
+  .menu a span {
+    display: block;
+    font-size: 0.7em;
+  }
+}

@@ -1,0 +1,17 @@
+.l-main {
+  width: 100%;
+  background-image: url(../images/deco_top.png);
+  background-position: right 45%;
+	background-repeat: no-repeat;
+  background-size: 30%;
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .l-main {
+    background-position: right 36%;
+    background-size: 50%;
+  }
+}
